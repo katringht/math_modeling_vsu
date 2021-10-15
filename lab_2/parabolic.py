@@ -2,11 +2,12 @@ import matplotlib.pyplot as plt
 import numpy as np
 from parser_points import parser
 
-def show_piecewise_parabolic_charts(file):
-    list_of_points = parser(file)
-    for points in list_of_points:
-        x = np.array(points[0], dtype=float)
+def show_piecewise_parabolic_charts(i, i2):
+    list_of_points = parser()
+    for points in list_of_points[i:i2]:
+        x = sorted(np.array(points[0], dtype=float))
         y = np.array(points[1], dtype=float)
+
         a0 = []
         a1 = []
         a2 = []

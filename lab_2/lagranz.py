@@ -17,9 +17,9 @@ def lagranz(x, y, t):
         z=z+y[j]*p1/p2
     return z
 
-def show_lagranz(file):
-    list_of_points = parser(file)
-    for points in list_of_points:
+def show_lagranz(i, i2):
+    list_of_points = parser()
+    for points in list_of_points[i:i2]:
         x = np.array(points[0], dtype=float)
         y = np.array(points[1], dtype=float)
         xnew = np.linspace(np.min(x),np.max(x),100)
