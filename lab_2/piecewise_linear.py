@@ -15,8 +15,8 @@ def piecewise_linear(x, y, xi):
 def  show_piecewise_linear(i, i2):
     list_of_points = parser()
     for points in list_of_points[i:i2]:
-        x = np.array(points[0], dtype=float)
-        y = np.array(points[1], dtype=float)
+        x = sorted(np.array(points[0], dtype=float))
+        y = sorted(np.array(points[1], dtype=float))
         t = [piecewise_linear(x, y, i) for i in x]
         plt.plot(x, y)
         plt.scatter(x, t)

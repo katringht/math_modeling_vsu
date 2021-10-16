@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from parser_points import parser
 
+
 def lagranz(x, y, t):
     z=0
     for j in range(len(y)):
@@ -16,6 +17,7 @@ def lagranz(x, y, t):
                 p2=p2*(x[j]-x[i])
         z=z+y[j]*p1/p2
     return z
+
 
 def show_lagranz(i, i2):
     list_of_points = parser()

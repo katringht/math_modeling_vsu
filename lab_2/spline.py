@@ -3,6 +3,7 @@ import numpy as np
 from scipy import interpolate
 from parser_points import parser
 
+
 def spline(i, i2):
     list_of_points = parser()
     for points in list_of_points[i:i2]:

@@ -13,7 +13,7 @@ def get_charts():
     elif request == '2':
         show_piecewise_linear(i,i1)
     elif request == '3':
-        show_piecewise_parabolic_charts(i, i1)
+        show_parab(i, i1)
     elif request == '4':
         spline(i,i1)
     else:
