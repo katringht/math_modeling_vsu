@@ -2,7 +2,7 @@ from spline import *
 from lagranz import *
 from piecewise_linear import *
 from parabolic import *
-from parser_points import *
+from my_parser import *
 
 def get_charts():
     i, i1 = choose_charts(len(curLen))
